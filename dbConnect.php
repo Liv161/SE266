@@ -13,8 +13,8 @@ function getDatabase() {
     
         $config = array(
             'DB_DNS' => 'mysql:host=ict.neit.edu;port=5500;',
-            'DB_USER' => 'se266_000926501',
-            'DB_PASSWORD' => '000926501'
+            'DB_USER' => 'xxxxx_123456789',
+            'DB_PASSWORD' => '123456789'
         );
         
         
