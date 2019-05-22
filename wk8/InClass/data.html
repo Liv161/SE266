@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Data Demo</title>
+</head>
+<body>
+    <div style="margin-left: 150px; margin-top:100px;">
+        <input type="button" id="btn-1" data-idx="1" value="Button 1">
+        <input type="button" id="btn-2" data-idx="2" value="Button 2">
+        <input type="button" id="btn-3" data-idx="3" value="Button 3">
+        
+    </div>
+</body>
+</html>
+
+<script>
+    
+        $(":button").click (function (e) {
+            var idx = $(this).data("idx");
+            alert (idx);
+            
+        })
+
+
+ </script>

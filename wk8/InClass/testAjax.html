@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <title>Test AJAX</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+    
+    $(document).ready(function () {
+        
+       fetch('test.php?idx=1')
+        .then(function(response) {
+         console.log (response);
+          return response.text();
+        })
+        .then(function(text) {
+          console.log('Request successful', JSON.parse(text));
+        })
+        .catch(function(error) {
+          console.log('Request failed', error)
+        });
+        
+        
+    });
+ </script>
